@@ -1,0 +1,51 @@
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card .favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.card .favorite button {
+    border: none;
+    /* Bỏ viền */
+    background: none;
+    /* Bỏ màu nền */
+    padding: 0;
+    /* Bỏ khoảng cách thừa */
+    cursor: pointer;
+    /* Thay đổi con trỏ khi hover */
+}
+
+.card .favorite button:hover .anticon {
+    color: #ff6666;
+    /* Change color on hover */
+    transform: scale(1.2);
+    /* Scale up on hover */
+    transition: transform 0.2s, color 0.2s;
+    /* Smooth transition */
+}
+
+.card .favorite button i:hover {
+    color: #ff6666;
+    /* Change color on hover */
+    transform: scale(1.2);
+    /* Scale up on hover */
+    transition: transform 0.2s, color 0.2s;
+    /* Smooth transition */
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-buy {
+    background-color: #f0ad4e;
+    border: none;
+}
